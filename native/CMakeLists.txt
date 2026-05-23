@@ -22,4 +22,5 @@ target_link_options(
     piperunity
     PRIVATE
     "-Wl,-z,max-page-size=16384"
+    "-Wl,-z,common-page-size=16384"
 )
