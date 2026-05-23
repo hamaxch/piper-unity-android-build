@@ -17,3 +17,9 @@ target_link_libraries(
     piperunity
     ${log-lib}
 )
+
+target_link_options(
+    piperunity
+    PRIVATE
+    "-Wl,-z,max-page-size=16384"
+)
